@@ -4,7 +4,7 @@
   "dockerFile": "./Dockerfile",
   "postCreateCommand": "pre-commit install && go mod download",
   "containerEnv": { "DEVCONTAINER": "1" },
-  "appPort": ["4180:4180"],
+  "appPort": ["0.0.0.0"],
   "runArgs": ["-e", "GIT_EDITOR=code --wait"],
   "customizations": {
     "vscode": {
